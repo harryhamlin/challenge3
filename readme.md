@@ -10,28 +10,30 @@ I employed the use of a multitude of if statements; variable declarations; vario
 
 ## Examples of Use
 
-A successful execution of the password generator results in a random password being generated as 
+A successful execution of the password generator results in a random password being generated with the parameters selected by the user, as demonstrated here:
 
-<img src="assets/images/readme_screenshots/larss.jpg"/>
+<img src="assets/images/successful.jpg"/>
 
-with all elements spread evenly accross the page. 
+When selecting password length, the user is prompted with this window prompt:
 
-These boxes resize appropriately as the viewport changes. If the viewport is less than 1200px or greater than 768px, then the margins on the left side for a cleaner look:
+<img src="assets/images/length_error_message.jpg"/>
 
-<img src="assets/images/readme_screenshots/medss.jpg"/>
+Should the user input a string, they are presented with this error message in the text area:
 
-When the viewport shrinks to less than 768, then the structure of the page changes and the nav bar bumps down at the top, the picture boxes change shape to lay more neatly on a smaller viewport, the subheadings of "About me" "Projects" and "Contact Me" switch to a flex-row format to allow for more space for the other elements, and the nav bar at the bottom of the page lays more neatly:
+<img src="assets/images/nan_error_message.jpg"/>
 
-<img src="assets/images/readme_screenshots/smass.jpg"/>
+If the user inputs an integer outside of the requested range or a non-integer, the following error message appears in the text area:
 
-The entire design adjusts neatly to any viewport size as per the the parameters of the challenge.
+<img src="assets/images/length_error_message.jpg"/>
 
-The links exhibit a change in color when hovered, both in the nav bar as well as in the portion with the picture links as demonstrated here:
+If the user inputs an invalid entry in this stage, the program terminates and the user must start over.
 
-<img src="assets/images/readme_screenshots/hoverdemo.jpg"/>
+After selecting the length of password, the user is promped with a series of questions about what type of characters they would like used:
 
-All links work correctly as per the user-story, both locally and globally.
+<img src="assets/images/character_prompt.jpg"/>
+
+If the user answers no to all character types, a similar error message to the anove error messages displays in the textarea.
 
 ## Link to Deployed Application
 
-<a href="https://harryhamlin.github.io/harry_hamlin_portfolio/">https://harryhamlin.github.io/harry_hamlin_portfolio/</a>
+<a href="https://harryhamlin.github.io/randompasswordgenerator/">https://harryhamlin.github.io/randompasswordgenerator/</a>

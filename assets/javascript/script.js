@@ -13,7 +13,8 @@ var bankNumber = "1234567890";
 var splitCharBank;
 var password = "";
 
-//this function prompts the user for all relevant inputs and assigning them to a variable. the if statements allow the function to be killed if parameters aren't met
+
+//this function prompts the user for all relevant inputs and assigning them to a variable. the if statements allow the process to be killed if parameters aren't met thus making the turn around time for the user faster
 function charType() {
   charLen = window.prompt("Password length? (must be between 8 and 128 inclusive)");
   if (charLen < 8 || charLen > 128) {
@@ -64,19 +65,19 @@ function generatePassword() {
     return "Input 'Password Length' must be an integer between 8 and 128, you input " + charLen;
   } else if (Number.isFinite(+charLen) === false || Number.isInteger(+charLen) === false) {
     return "Input 'Password Length' must be an integer. You input " + charLen;
-  } else if (charTypeLowercase === false && charTypeUppercase === false && charTypeNumeral === false && charTypeSpecial === false) {
+  } else if (charTypeLowercase === false && charTypeUppercase === false && charTypeNumeral === false && charTypeSpecial === false) { 
     return "No character type selected, at least one character type must be confirmed";
   } else {
     return password
   }
 }
 
-
-//this is the function running the main gengerate password, and using a queryselector to return the password (or other error messages noted above)
+//this is the function running the main gengerate password, and using a queryselector to return the password (or other error messages noted above). the password being set to "" at the start of the function clears the textarea before each run of the function
 function writePassword() {
-  var password = generatePassword()
+  password = "";
+  var passwordResult = generatePassword();
   var passwordText = document.querySelector("#password");
-  passwordText.value = password;
+  passwordText.value = passwordResult;
 }
 
 //this is the event listener that runs the above writePassword function when the button is clicked

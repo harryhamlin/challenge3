@@ -22,10 +22,10 @@ function charType() {
   } else if (Number.isFinite(+charLen) === false || Number.isInteger(+charLen) === false) {
     return;
   } else {
-    charTypeLowercase = window.confirm("Lower Case Letters?");
-    charTypeUppercase = window.confirm("Upper Case Letters?");
-    charTypeNumeral = window.confirm("Numbers?");
-    charTypeSpecial = window.confirm("Special Characters?");
+    charTypeLowercase = window.confirm("Would you like your password to contain Lower Case Letters? (OK for yes, cancel for no)");
+    charTypeUppercase = window.confirm("Would you like your password to contain Upper Case Letters? (OK for yes, cancel for no)");
+    charTypeNumeral = window.confirm("Would you like your password to contain Numbers? (OK for yes, cancel for no)");
+    charTypeSpecial = window.confirm("Would you like your passwrod to contain Special Characters? (OK for yes, cancel for no) ");
     if (charTypeLowercase === false && charTypeUppercase === false && charTypeNumeral === false && charTypeSpecial === false) {
       return;
     }

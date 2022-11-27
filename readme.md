@@ -1,16 +1,16 @@
-# Challenge 02: CSS Portfolio - Due Nov 17, 2022
+# Challenge 03: Random Password Generator - Due Nov 28, 2022
 
 ## Introduction
 
-The purpose of this challenge was to familiarize me with building a website from scratch incorporating all of the skills we've obtained so far, specifically with the use of flex-box and media queries.
+The purpose of this challenge was to familiarize me with the the use of Javascript to perform logical functions that result in an action being performed, in this case the generation of a random password.
 
 ## Techniques Used
 
-I employed the use of a multitude of CSS selectors, the useage of flex-box, and the use of media queries to design a responsive website that fulfills all requirements of the challenge.
+I employed the use of a multitude of if statements; variable declarations; various methods including window.prompt, window.confirm, isFinite, floor, random, isInterger, length, querySelector, addEventListener, and split; for intirations; and various concatenation techniques.
 
 ## Examples of Use
 
-The screen without utilizing media queries looks like the following:
+A successful execution of the password generator results in a random password being generated as 
 
 <img src="assets/images/readme_screenshots/larss.jpg"/>
 

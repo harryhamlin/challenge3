@@ -32,8 +32,9 @@ function charType() {
   }
 }
 
-//this function adds character banks to the aggergate charBank based on user inputs and then turns that bank into an array using the .split(``) method
+//this function adds character banks to the aggergate charBank based on user inputs and then turns that bank into an array using the .split(``) method. the initial setting of charBank to "" resets the function each time the button is clicked
 function concatChar() {
+  charBank = "";
   if (charTypeUppercase) {
     charBank += bankUppercase
   }
